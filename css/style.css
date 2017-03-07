@@ -15,3 +15,47 @@ form {
 	padding: 20px 0;
 	border-radius: 4px;
 }
+
+select {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 0;
+	font-size: 15px;
+}
+
+select:focus {
+	outline: none;
+}
+
+input {
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 15px;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 15px;
+	transition: all .3s ease-in-out;
+}
+
+input:focus {
+	outline:  none;
+	border-bottom-color: #bbb;
+}
+
+button {
+	background-color: #f26745;
+	margin-top: 20px;
+	width: 100%;
+	border: none;
+	padding:  8px 10px;
+	border-radius: 4px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
