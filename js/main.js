@@ -1,3 +1,6 @@
+	$('.quote').hide();
+
+
 	// When the user submits the form
 
 	$('form').on('submit', function(e) {
@@ -23,7 +26,7 @@
 
 		// 4) Generate error validation (Error class)
 
-	if (author === null || " ") {
+	if (author === null || author === " ") {
 		$('#authorSelect').addClass('error');
 	}
 
@@ -39,13 +42,16 @@
 
 
 		//  Quote display
-
+		if ((author !== null || author !== " ") && noun.length !== 0 && verb.length !==0) {
 			// 1) Hide quote unless selection is made
 
 			// 2) Fade in the quote by the selected author
+			$('#' + author).fadeIn(300);
 
 			// 3) Update the text of the element with the class .noun to the text stored in the noun variable.	
-
+			$('.noun').text(noun);
 			// 4) Update the text of the element with the class .verb to the text stored in the verb variable.	
+			$('.verb').text(verb);
+		};
 
 });
